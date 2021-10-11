@@ -24,8 +24,8 @@ namespace assignment_3.Models
         
 
         [Required]
-        [MinLength(20)]
-        [MaxLength(200)]
+        [MinLength(5)]
+        [MaxLength(50)]
         [DisplayName("Title")]
         public string Title { get; set; }
         
