@@ -24,13 +24,15 @@ namespace assignment_3.Models
         
 
         [Required]
-        [StringLength(50, MinimumLength = 5)]
+        [MinLength(20)]
+        [MaxLength(200)]
         [DisplayName("Title")]
         public string Title { get; set; }
         
         
         [Required]
-        [StringLength(200, MinimumLength = 20)]
+        [MinLength(20)]
+        [MaxLength(200)]
         [DisplayName("Message")]
         public string Message { get; set; }
         
