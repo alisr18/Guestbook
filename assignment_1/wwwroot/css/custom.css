@@ -1,0 +1,12 @@
+.egendef {
+    background-color: tomato;
+    color: white;
+    padding: 10px;
+}
+
+#p_header {
+    background-color: antiquewhite;
+    color: aliceblue;
+    padding: 40px;
+    text-align: center;
+}
