@@ -1,0 +1,30 @@
+﻿@model Guest
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Guestbook form: </h2>
+
+<form action="" method="post">
+    <label asp-for="Name" id="Name"></label>
+    <input asp-for="Name">
+    <span asp-validation-for="Name"></span>
+    
+    <label asp-for="Title" id="Title"></label>
+    <input asp-for="Title">
+    <span asp-validation-for="Title"></span>
+    
+   
+    <label asp-for="Message" id="Message"></label>
+    <textarea asp-for="Message"></textarea>
+    <span asp-validation-for="Message"></span>
+
+    <input type="submit" value="submit" id="Submit">
+</form>
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/guestbook.css"/>    
+}
