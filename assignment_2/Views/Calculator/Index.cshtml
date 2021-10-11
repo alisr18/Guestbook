@@ -1,8 +1,40 @@
-﻿@model TModel
+﻿@section Scripts
+{
+    <script src="~/js/calculator.js" asp-append-version="true"></script>
+}
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/calculator.css"/>
+}
 
 @{
-    ViewBag.Title = "title";
+    ViewBag.Title = "Calculator";
     Layout = "_Layout";
 }
 
-<h2>title</h2>
+
+<div class="container">
+    <h2 class="display-4">KALKIS</h2>
+    <p>Dette er min første kalkulator</p>
+    <div class="calc">
+        <button onclick="calculate(0)" id="zero">0</button>
+        <button onclick="calculate(1)" id="one">1</button>
+        <button onclick="calculate(2)" id="two">2</button>
+        <button onclick="calculate(3)" id="three">3</button>
+        <button onclick="calculate(4)" id="four">4</button>
+        <button onclick="calculate(5)" id="five">5</button>
+        <button onclick="calculate(6)" id="six">6</button>
+        <button onclick="calculate(7)" id="seven">7</button>
+        <button onclick="calculate(8)" id="eight">8</button>
+        <button onclick="calculate(9)" id="nine">9</button>
+        <button onclick="calculate('+')" id="plus">+</button>
+        <button onclick="calculate('-')" id="minus">-</button>
+        <button onclick="calculate('*')" id="multiply">*</button>
+        <button onclick="calculate('/')" id="divide">/</button>
+        <button onclick="Reset()" id="reset">C</button>
+        <button onclick="clr()" id="clear">CE</button>
+        <button class="equal" onclick="Result()" id="equals">=</button>
+        <input type="text" id="display">
+    </div>
+</div>
