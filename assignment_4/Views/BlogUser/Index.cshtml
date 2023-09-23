@@ -1,0 +1,19 @@
+﻿@model IEnumerable<BlogUser>
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>List of blogposts</h2>
+
+@foreach (var blogusers in Model)
+{
+    <p>Nickname: @blogusers.Nickname<br>Title: @blogusers.Title<br>Content: @blogusers.Content<br>Summary: @blogusers.Summary<br><br>Time: @blogusers.Time</p>
+}
+
+
+
+@section Styles
+{
+    <link rel="stylesheet" href="~/css/user.css"/>
+}
